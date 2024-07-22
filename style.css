@@ -1,0 +1,77 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --slate-300: hsl(212, 45%, 89%);
+    --slate-500: hsl(216, 15%, 48%);
+    --slate-900: hsl(218, 44%, 22%);
+}
+
+body {
+    display: flex;
+    background-color: rgb(224 242 255);
+    font-family: "Outfit", sans-serif;
+    font-size: 1rem; /* use relative units */
+    height: 100vh; /* use relative units */
+    justify-content: center;
+    align-items: center; /* center vertically */
+    margin: 0; /* remove default margins */
+}
+
+.background-secundario {
+    border-radius: 10%;
+    background-color: var(--white);
+    border: 10px;
+    margin-top: 20px; /* adjust top margin */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.dentro {
+    background-color: var(--white);
+    border-radius: 5px;
+    padding: 1rem; /* use relative units */
+    text-align: center; /* center text */
+}
+
+.qr-code {
+    width: 100%; /* make image responsive */
+    max-width: 300px; /* limit max width */
+    height: auto; /* maintain aspect ratio */
+    margin-bottom: 1rem; /* add space below image */
+    border-radius: 4px;
+}
+
+.solidx {
+    min-height: 50%; /* adjust height */
+    max-width: 90%; /* adjust for better responsiveness */
+    border-radius: 30px;
+
+    font-family: "Outfit", sans-serif;
+    font-size: 1rem; /* use relative units */
+    height: auto; /* adjust for better responsiveness */
+    width: auto; /* adjust for better responsiveness */
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* adjust direction to column */
+    justify-content: center;
+    padding: 1rem; /* use relative units */
+}
+
+/* Media Queries for different screen sizes */
+
+@media (max-width: 768px) {
+    .solidx {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    .background-secundario {
+        margin-top: 20px;
+        padding: 0.5rem;
+    }
+
+    body {
+        font-size: 0.875rem; /* adjust font size for smaller screens */
+    }
+}
